@@ -1,0 +1,13 @@
+# Only config.json is intended for public distribution. Keep all signing secrets and local history out of Git.
+/keys/
+/history/
+*.pem
+*.tmp
+*.cjs
+config.original.json
+generate-config.cmd
+
+# This folder is also the public repository checkout: publish only the signed file and this protection rule.
+/*
+!/config.json
+!/.gitignore
